@@ -1,17 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.chapman.ftfcu</groupId>
-	<artifactId>batch</artifactId>
+
+	<groupId>com.journaldev.spring</groupId>
+	<artifactId>SpringBatchExample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ftfcu-batch</name>
 	<packaging>jar</packaging>
-	<description>Batch loader for ftfcu data</description>
+
+	<name>SpringBatchDemo</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
 		<jdk.version>1.8</jdk.version>
-		<spring.version>4.3.12.RELEASE</spring.version>
+		<spring.version>4.3.13.RELEASE</spring.version>
 		<spring.batch.version>3.0.8.RELEASE</spring.batch.version>
 		<mysql.driver.version>5.1.25</mysql.driver.version>
 		<junit.version>4.11</junit.version>
@@ -37,6 +38,11 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-oxm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-expression</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
 
@@ -78,6 +84,12 @@
 			<groupId>com.thoughtworks.xstream</groupId>
 			<artifactId>xstream</artifactId>
 			<version>1.4.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>2.10.0</version>
 		</dependency>
 
 	</dependencies>
